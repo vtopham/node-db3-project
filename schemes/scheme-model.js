@@ -1,3 +1,4 @@
+
 const db = require('../data/db-config')
 
 module.exports = {
@@ -7,4 +8,29 @@ module.exports = {
     add,
     update,
     remove
+}
+
+function find() {
+   return db.select('*')
+        .from('schemes')
+}
+
+function findById() {
+
+}
+
+function findSteps() {
+
+}
+
+function add() {
+
+}
+
+function update() {
+
+}
+
+function remove() {
+
 }

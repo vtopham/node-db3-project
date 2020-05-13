@@ -19,6 +19,13 @@ function find() {
 function findById(id) {
     return db('schemes')
         .where({id})
+        .then(results => {
+            if(results[0]) {
+                return results
+            } else {
+                return null
+            }
+        })
 }
 
 function findSteps(scheme_id) {

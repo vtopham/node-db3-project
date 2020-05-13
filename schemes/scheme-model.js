@@ -15,8 +15,9 @@ function find() {
         .from('schemes')
 }
 
-function findById() {
-
+function findById(id) {
+    return db('schemes')
+        .where({id})
 }
 
 function findSteps() {
